@@ -8,7 +8,7 @@ import time,sys
 import sqlite3,random
 
 ################### 自己设置区域 #####################
-citycode='022' # 需要爬取的城市代号
+citycode='021' # 需要爬取的城市代号
 keypoolFile='keypool.txt' # key池文件
 database='poi.sqlite' # 数据库的文件名
 ####################################################
