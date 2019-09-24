@@ -2,7 +2,7 @@
 
 项目链接：<https://github.com/RealIvyWong/GaodeCrawler>
 
-## 1 实现功能
+## 实现功能
 
 这个项目是爬取某个城市所有类别的高德 POI 数据，并写进 sqlite 数据库。
 
@@ -12,13 +12,13 @@
 
 【注】 key 要是 **Web** 服务的。
 
-## 2 依赖环境
+## 依赖环境
 
 使用的是 Python 3.7。
 
 无需额外的第三方库。
 
-## 3 使用方法
+## 使用方法
 
 **step1.** 修改 start.py 中的【自己设置区域】的三个变量 citycode（城市代码）, keypoolFile（key 池的文件），database（数据库的文件名，默认为 poi.sqlite)。
 
@@ -32,7 +32,7 @@
 >
 > 比如说 {"city":"北京市","adcode":"110000","citycode":"010"} 北京市的 citycode，就是 010。
 
-## 4 文件说明
+## 文件说明
 
 包含三个文件。
 
@@ -56,24 +56,18 @@
 
 key 池，每个 key 一行。
 
-## 5 爬取示例
+## 爬取示例
 
 如果开始成功运行之后，控制台输出大概是这样的。代码的原理是先按整个城市范围进行搜索，然后再按各个区县进行搜索，这样可以获得更多的数据，所以一个城市的爬取会按一个个区域来爬。
 
-![1558873768062](https://github.com/RealIvyWong/ImageHosting/raw/master/assets/1558873768062.png)
+![](assets/1558873768062.png)
 
 得到的`poi.sqlite`结构是包含一个 poi 表。
 
 表的字段有 id（序号）, poi_id（POI 自己的 id）, biz_type（好像是商业类型的数据，忘记了，一般都为空，不重要）, name（POI 名）, type（POI 类型，按分号划分大中小类三级）, address（地址）, tel（电话)，location（经纬度，目测是火星坐标系），pcode（省的代码），pname（省的名称），citycode（城市代码），cityname（城市名），adcode（区域代码），adnametext（区县名），business_area（所属商业区，不一定会有）。
 
-![1558875092443](https://github.com/RealIvyWong/ImageHosting/raw/master/assets/1558875092443.png)
+![](assets/1558875092443.png)
 
-## 6 联系我
+## 联系我
 
 如果有什么建议或意见，欢迎联系我（huangyingjing@whu.edu.cn)或者提 issue！
-
-## 7 请我喝杯咖啡
-
-如果我的代码帮助到了你，欢迎你请我喝杯咖啡~
-
-<img src="https://github.com/RealIvyWong/ImageHosting/raw/master/assets/支付宝收款码.jpg" height="30%" width="30%"> <img src="https://github.com/RealIvyWong/ImageHosting/raw/master/assets/微信收款码.png" height="30%" width="30%">
