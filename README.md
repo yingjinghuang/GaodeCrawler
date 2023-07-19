@@ -1,6 +1,6 @@
 # GaodeCrawler
 
-项目链接：<https://github.com/RealIvyWong/GaodeCrawler>
+项目链接：<https://github.com/yingjinghuang/GaodeCrawler>
 
 ## 实现功能
 
