@@ -67,7 +67,3 @@ key 池，每个 key 一行。
 表的字段有 id（序号）, poi_id（POI 自己的 id）, biz_type（好像是商业类型的数据，忘记了，一般都为空，不重要）, name（POI 名）, type（POI 类型，按分号划分大中小类三级）, address（地址）, tel（电话)，location（经纬度，目测是火星坐标系），pcode（省的代码），pname（省的名称），citycode（城市代码），cityname（城市名），adcode（区域代码），adnametext（区县名），business_area（所属商业区，不一定会有）。
 
 ![](assets/1558875092443.png)
-
-## 联系我
-
-如果有什么建议或意见，欢迎联系我（huangyingjing@whu.edu.cn)或者提 issue！
